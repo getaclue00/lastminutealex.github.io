@@ -1,0 +1,63 @@
+site: Last Minute Laura Discord Bot
+url: https://lastminutelaura.ca
+title: Alex
+description: Last Minute Laura Discord Bot
+twitter:
+  username: lastminutealex
+  card: summary
+  creator: lastminutealex
+author:
+  twitter: lastminutealex
+  name: Alex
+  avatar:
+  email: alex@lastminutelaura.ca
+  url: https://lastminutelaura.ca
+permalink: pretty
+
+google_analytics: UA-106794469-1
+google_site_verification: j_0ua6jd1va4oFzra32KpYStOsNq9Ve98QboLI-LAN0
+
+baseurl: ""
+
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - .jekyll-cache
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:slug
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
